@@ -1,0 +1,67 @@
+* {
+    margin:0;
+    border:0;
+    padding:0;
+}
+
+.header {
+    display: grid;
+    height:5rem;
+    grid-template-columns: auto 1fr;
+    background-color: #001632;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(22rem,auto));
+    margin-top: 2rem;
+    margin-left: 12rem;
+    margin-right: 12rem;
+    gap:1rem;
+}
+
+.card {
+    display: grid;
+    grid-template-rows: 23rem auto;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    border-radius: 25px;
+    height: 30rem;
+    width: 22rem;
+    background-image: url(assets/images/boolean-laptop.jpg);
+    background-repeat: no-repeat;
+    background-size: 22rem;
+    border: 2px solid #001632;
+
+}
+
+.card .card--top {
+    display: flex;
+    justify-content: flex-end;
+
+}
+
+.card--bottom {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items:baseline;
+    justify-content:flex-end;
+}
+
+header img,
+.card--top img {
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+}
+.card--bottom img {
+    width: 2.5rem;
+    height: 2.5rem;
+}
+p {
+    display: grid;
+    text-align: justify;
+    margin-left: 2.5rem;
+    margin-right: 4rem;
+}
