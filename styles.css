@@ -9,28 +9,39 @@
     height:5rem;
     grid-template-columns: auto 1fr;
     background-color: #001632;
+    position:sticky;
+    top:0;
 }
+
+.footer {
+    display: grid;
+    height:5rem;
+    grid-template-columns: auto 1fr;
+    background-color: #001632;
+    position:sticky;
+    bottom:0;
+}
+
+/*    background-image: url(images/hero-page-result.png);*/
 
 .container {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(22rem,auto));
-    margin-top: 2rem;
-    margin-left: 12rem;
-    margin-right: 12rem;
-    gap:1rem;
+    grid-template-columns: repeat(auto-fill, minmax(20rem,auto));
+    margin: 2rem 10rem 2rem 10rem;
+    grid-gap: 2rem;
 }
 
 .card {
     display: grid;
-    grid-template-rows: 23rem auto;
+    grid-template-rows: 20rem auto;
     -webkit-border-radius: 25px;
     -moz-border-radius: 25px;
     border-radius: 25px;
-    height: 30rem;
-    width: 22rem;
+    height: 27rem;
+    width: 20rem;
     background-image: url(assets/images/boolean-laptop.jpg);
     background-repeat: no-repeat;
-    background-size: 22rem;
+    background-size: 20rem;
     border: 2px solid #001632;
 
 }
@@ -38,7 +49,6 @@
 .card .card--top {
     display: flex;
     justify-content: flex-end;
-
 }
 
 .card--bottom {
@@ -47,9 +57,11 @@
     flex-wrap: wrap;
     align-items:baseline;
     justify-content:flex-end;
+    padding:0.2rem;
 }
 
 header img,
+footer img,
 .card--top img {
     width: 5rem;
     height: 5rem;
